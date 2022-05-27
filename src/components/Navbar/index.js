@@ -83,7 +83,7 @@ const Navbar = ({ toggleSidebar }) => {
             </li>
             <li className="nav__item">
               <a
-                href="#"
+                href="https://uk.linkedin.com/in/matthew-m-king"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav__link"

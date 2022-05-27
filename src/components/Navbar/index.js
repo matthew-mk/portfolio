@@ -1,14 +1,14 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/logo.svg";
-import { Link } from "react-scroll";
+import { Link as LinkS } from "react-scroll";
 import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   return (
     <header>
       <div className="container row">
-        <Link
+        <LinkS
           className="logo"
           to="hero"
           spy={true}
@@ -17,14 +17,14 @@ const Navbar = () => {
           duration={500}
         >
           <img src={logo} alt="logo" />
-        </Link>
-        <div className="mobile__icon">
+        </LinkS>
+        <div className="mobile__icon" onClick={toggleSidebar}>
           <FaBars />
         </div>
         <nav className="nav">
           <ul className="nav__list nav__list--primary">
             <li className="nav__item">
-              <Link
+              <LinkS
                 to="about"
                 spy={true}
                 smooth={true}
@@ -33,10 +33,10 @@ const Navbar = () => {
                 className="nav__link"
               >
                 About
-              </Link>
+              </LinkS>
             </li>
             <li className="nav__item">
-              <Link
+              <LinkS
                 to="skills"
                 spy={true}
                 smooth={true}
@@ -45,17 +45,19 @@ const Navbar = () => {
                 className="nav__link"
               >
                 Skills
-              </Link>
+              </LinkS>
             </li>
-            <li
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="nav__item"
-            >
-              <Link className="nav__link">Projects</Link>
+            <li className="nav__item">
+              <LinkS
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="nav__link"
+              >
+                Projects
+              </LinkS>
             </li>
           </ul>
           <ul className="nav__list nav__list--secondary">
@@ -71,7 +73,7 @@ const Navbar = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#"
+                href="https://github.com/matthew-mk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav__link"

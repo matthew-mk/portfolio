@@ -15,6 +15,10 @@ img {
   max-width: 100%;
 }
 
+.primary {
+  color: #0085ff;
+}
+
 .container {
   width: 80%;
   max-width: 1100px;

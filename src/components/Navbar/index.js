@@ -9,12 +9,12 @@ const Navbar = ({ toggleSidebar }) => {
     <header>
       <div className="container row">
         <LinkS
-          className="logo"
           to="hero"
           spy={true}
           smooth={true}
           offset={0}
           duration={500}
+          className="logo"
         >
           <img src={logo} alt="logo" />
         </LinkS>

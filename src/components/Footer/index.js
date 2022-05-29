@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="footer" className="background--primary">
+    <footer className="background--primary">
       <LinkS
         to="#"
         spy={true}
@@ -26,7 +26,12 @@ const Footer = () => {
       <div className="footer__links">
         {links.map((link) => {
           return (
-            <a href={link.href} className="footer__link">
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link"
+            >
               {link.name}
             </a>
           );

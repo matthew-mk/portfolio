@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   height: calc(100vh - (45px + 2.5rem + 1px));
+  max-height: 800px;
   color: whitesmoke;
 }
 

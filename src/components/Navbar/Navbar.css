@@ -9,7 +9,6 @@ header {
   display: flex;
   align-items: center;
   margin-right: 1em;
-  cursor: pointer;
 }
 
 .mobile__icon {

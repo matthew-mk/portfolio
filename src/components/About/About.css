@@ -1,0 +1,21 @@
+#about {
+  background-color: #f5f7fa;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1rem;
+  width: 48%;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.about__img {
+  width: 48%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}

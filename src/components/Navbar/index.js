@@ -5,19 +5,25 @@ import { Link as LinkS } from "react-scroll";
 import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Navbar = ({ toggleSidebar }) => {
+  const iconSize = "1.5rem";
+  const socialMediaItems = [
+    { icon: <FaEnvelope size={iconSize} />, href: "#" },
+    {
+      icon: <FaGithub size={iconSize} />,
+      href: "https://github.com/matthew-mk",
+    },
+    {
+      icon: <FaLinkedinIn size={iconSize} />,
+      href: "https://linkedin.com/in/matthew-m-king",
+    },
+  ];
+
   return (
     <header>
       <div className="container row">
-        <LinkS
-          to="hero"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          className="logo"
-        >
+        <div className="logo">
           <img src={logo} alt="logo" />
-        </LinkS>
+        </div>
         <div className="mobile__icon" onClick={toggleSidebar}>
           <FaBars />
         </div>
@@ -61,36 +67,20 @@ const Navbar = ({ toggleSidebar }) => {
             </li>
           </ul>
           <ul className="nav__list nav__list--secondary">
-            <li className="nav__item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="nav__link"
-              >
-                <FaEnvelope size="1.5rem" />
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="https://github.com/matthew-mk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="nav__link"
-              >
-                <FaGithub size="1.5rem" />
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="https://uk.linkedin.com/in/matthew-m-king"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="nav__link"
-              >
-                <FaLinkedinIn size="1.5rem" />
-              </a>
-            </li>
+            {socialMediaItems.map((item) => {
+              return (
+                <li className="nav__item">
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="nav__link"
+                  >
+                    {item.icon}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>

@@ -1,6 +1,7 @@
 .hero__background {
   position: absolute;
   height: 100vh;
+  max-height: 800px;
   width: 100%;
   z-index: -1;
   object-fit: cover;

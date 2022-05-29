@@ -1,0 +1,7 @@
+.skills__technologies {
+  display: grid;
+  gap: 4rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: 85%;
+  margin: 0 auto;
+}

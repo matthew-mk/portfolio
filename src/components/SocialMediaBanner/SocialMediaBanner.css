@@ -1,0 +1,27 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 4rem 0;
+  margin: 0;
+}
+
+.banner__item {
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding: 1.5em;
+  cursor: pointer;
+}
+
+.banner__item + .banner__item {
+  margin-left: 6em;
+}
+
+.banner__link {
+  text-decoration: none;
+}
+
+.banner__item:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}

@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             About 👋
           </LinkS>
           <LinkS
-            to="classes"
+            to="skills"
             offset={0}
             onClick={toggleSidebar}
             className="sidebar__link"
@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             Skills 🖥
           </LinkS>
           <LinkS
-            to="contact"
+            to="projects"
             offset={0}
             onClick={toggleSidebar}
             className="sidebar__link"

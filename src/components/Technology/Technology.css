@@ -1,0 +1,14 @@
+.technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technology__img {
+  width: 70px;
+  height: 70px;
+}
+
+.technology__name {
+  margin-top: 0.75rem;
+}

@@ -19,7 +19,7 @@ const Navbar = ({ toggleSidebar }) => {
   ];
 
   return (
-    <header>
+    <header id="header">
       <div className="container row">
         <div className="logo">
           <img src={logo} alt="logo" />
@@ -47,7 +47,7 @@ const Navbar = ({ toggleSidebar }) => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
+                duration={750}
                 className="nav__link"
               >
                 Skills
@@ -59,7 +59,7 @@ const Navbar = ({ toggleSidebar }) => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={500}
+                duration={1000}
                 className="nav__link"
               >
                 Projects

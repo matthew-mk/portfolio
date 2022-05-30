@@ -14,11 +14,11 @@ const Footer = () => {
   return (
     <footer className="background--primary">
       <LinkS
-        to="#"
+        to="header"
         spy={true}
         smooth={true}
-        offset={0}
-        duration={1000}
+        offset={-1}
+        duration={1500}
         className="footer__logo"
       >
         <img src={logo} alt="logo" />

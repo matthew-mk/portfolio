@@ -3,7 +3,7 @@ import "./SocialMediaBanner.css";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialMediaBanner = () => {
-  const iconSize = "2rem";
+  const iconSize = "1.75rem";
   const socialMediaItems = [
     { icon: <FaEnvelope size={iconSize} />, href: "#" },
     {

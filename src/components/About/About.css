@@ -5,13 +5,13 @@
 .about__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 1.1rem;
   width: 48%;
 }
 
 .emoji {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .about__img {

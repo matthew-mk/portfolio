@@ -16,8 +16,10 @@ img {
   max-width: 100%;
 }
 
+h1,
 p {
-  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .primary {
@@ -48,13 +50,12 @@ p {
 }
 
 .section__topic {
-  font-size: 1rem;
   font-weight: 600;
-  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .section__title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 4rem;
 }

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Project.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Project = ({
   title,
@@ -10,8 +12,12 @@ const Project = ({
   img,
   alt,
 }) => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className="project">
+    <div className="project" data-aos="fade-right">
       <div className="project__text">
         <h1 className="project__title">
           {title}

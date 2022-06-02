@@ -68,3 +68,30 @@
 .project__link:hover {
   opacity: 0.8;
 }
+
+@media screen and (max-width: 1100px) {
+  .project__img {
+    display: none;
+  }
+
+  .project__text {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project {
+    box-shadow: none;
+  }
+
+  .project + .project {
+    padding-top: 3rem;
+    border-top: 1px solid #bbb;
+    border-radius: 0;
+  }
+
+  .project,
+  .project__text {
+    padding: 0;
+  }
+}

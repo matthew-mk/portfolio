@@ -55,3 +55,9 @@
   opacity: 0.75;
   transition: 0.2s ease-in-out;
 }
+
+@media screen and (max-width: 500px) {
+  .sidebar__link {
+    font-size: 1.2rem;
+  }
+}

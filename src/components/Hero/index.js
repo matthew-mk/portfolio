@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id="hero" className="container">
       <h1 className="hero__title">
-        Hey,
+        Hey,{" "}
         <span className="hero__title--break">
           <br />
         </span>

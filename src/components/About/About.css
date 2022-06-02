@@ -19,3 +19,19 @@
   object-fit: cover;
   -o-object-fit: cover;
 }
+
+@media screen and (max-width: 1200px) {
+  .about__text > p + p {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about__text {
+    width: 100%;
+  }
+
+  .about__img {
+    display: none;
+  }
+}

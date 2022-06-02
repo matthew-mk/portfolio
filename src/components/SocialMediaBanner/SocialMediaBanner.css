@@ -14,7 +14,7 @@
 }
 
 .banner__item + .banner__item {
-  margin-left: 6em;
+  margin-left: 6rem;
 }
 
 .banner__link {
@@ -24,4 +24,16 @@
 .banner__item:hover {
   opacity: 0.8;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 500px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner__item + .banner__item {
+    margin-left: 0;
+    margin-top: 4rem;
+  }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Projects.css";
 import Project from "../Project";
 import testImage from "../../assets/images/graduation.jpg";
 
@@ -38,7 +37,7 @@ const Projects = () => {
         <h1 className="section__title">
           Explore some of the projects I&#39;ve worked on ✍️
         </h1>
-        <div className="projects">
+        <div>
           {projects.map((project) => {
             return (
               <Project

@@ -24,13 +24,14 @@ const Footer = () => {
         <img src={logo} alt="logo" />
       </LinkS>
       <div className="footer__links">
-        {links.map((link) => {
+        {links.map((link, i) => {
           return (
             <a
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
               className="footer__link"
+              key={`footer__link-${i}`}
             >
               {link.name}
             </a>

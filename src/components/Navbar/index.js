@@ -67,9 +67,9 @@ const Navbar = ({ toggleSidebar }) => {
             </li>
           </ul>
           <ul className="nav__list nav__list--secondary">
-            {socialMediaItems.map((item) => {
+            {socialMediaItems.map((item, i) => {
               return (
-                <li className="nav__item">
+                <li className="nav__item" key={`nav__item-${i}`}>
                   <a
                     href={item.href}
                     target="_blank"

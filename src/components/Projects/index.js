@@ -38,7 +38,7 @@ const Projects = () => {
           Explore some of the projects I&#39;ve worked on ✍️
         </h1>
         <div>
-          {projects.map((project) => {
+          {projects.map((project, i) => {
             return (
               <Project
                 title={project.title}
@@ -48,6 +48,7 @@ const Projects = () => {
                 sourceCode={project.sourceCode}
                 img={project.img}
                 alt={project.alt}
+                key={`project-${i}`}
               />
             );
           })}

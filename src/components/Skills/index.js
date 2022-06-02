@@ -34,8 +34,14 @@ const Skills = () => {
         <p className="section__topic accent">Skills</p>
         <h1 className="section__title">View the technologies I use 🖥️</h1>
         <div className="skills__technologies" data-aos="fade-up">
-          {technologies.map((technology) => {
-            return <Technology name={technology.name} img={technology.img} />;
+          {technologies.map((technology, i) => {
+            return (
+              <Technology
+                name={technology.name}
+                img={technology.img}
+                key={`technology-${i}`}
+              />
+            );
           })}
         </div>
       </div>

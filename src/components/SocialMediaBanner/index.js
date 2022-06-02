@@ -18,9 +18,9 @@ const SocialMediaBanner = () => {
 
   return (
     <ul className="banner background--primary">
-      {socialMediaItems.map((item) => {
+      {socialMediaItems.map((item, i) => {
         return (
-          <li className="banner__item">
+          <li className="banner__item" key={`banner__item-${i}`}>
             <a
               href={item.href}
               target="_blank"

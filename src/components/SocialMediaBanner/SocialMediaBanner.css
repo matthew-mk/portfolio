@@ -10,15 +10,12 @@
   background-color: whitesmoke;
   border-radius: 50%;
   padding: 1.5em;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .banner__item + .banner__item {
   margin-left: 6rem;
-}
-
-.banner__link {
-  text-decoration: none;
 }
 
 .banner__item:hover {

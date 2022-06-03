@@ -8,7 +8,7 @@ const Footer = () => {
     { name: "Email", href: "#" },
     { name: "GitHub", href: "https://github.com/matthew-mk" },
     { name: "LinkedIn", href: "https://linkedin.com/in/matthew-m-king" },
-    { name: "CV", href: "#" },
+    // { name: "CV", href: "#" },
   ];
 
   return (

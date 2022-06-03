@@ -30,12 +30,22 @@ const Project = ({
           style={{ display: !live && !sourceCode && "none" }}
         >
           {live && (
-            <a href={live} className="project__link accent">
+            <a
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link accent"
+            >
               View live
             </a>
           )}
           {sourceCode && (
-            <a href={sourceCode} className="project__link accent">
+            <a
+              href={sourceCode}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link accent"
+            >
               Source code
             </a>
           )}

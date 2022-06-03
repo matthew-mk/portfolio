@@ -1,6 +1,8 @@
 import React from "react";
 import Project from "../Project";
-import testImage from "../../assets/images/graduation.jpg";
+import surfImage from "../../assets/images/projects/surf.png";
+import dataImage from "../../assets/images/projects/data.png";
+import covidImage from "../../assets/images/projects/covid.png";
 
 const Projects = () => {
   const projects = [
@@ -11,9 +13,21 @@ const Projects = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut" +
         "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
         "nisi ut aliquip ex ea commodo consequat.",
-      live: "#",
-      sourceCode: "#",
-      img: testImage,
+      live: "",
+      sourceCode: "",
+      img: surfImage,
+      alt: "a person surfing a wave",
+    },
+    {
+      title: "Police Oversight Internship",
+      technologies: "React, Express, Node",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut" +
+        "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
+        "nisi ut aliquip ex ea commodo consequat.",
+      live: "",
+      sourceCode: "",
+      img: dataImage,
       alt: "",
     },
     {
@@ -24,8 +38,8 @@ const Projects = () => {
         "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
         "nisi ut aliquip ex ea commodo consequat.",
       live: "",
-      sourceCode: "",
-      img: testImage,
+      sourceCode: "https://github.com/matthew-mk/COVInfo",
+      img: covidImage,
       alt: "",
     },
   ];

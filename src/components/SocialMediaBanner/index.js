@@ -17,22 +17,21 @@ const SocialMediaBanner = () => {
   ];
 
   return (
-    <ul className="banner background--primary">
+    <div className="banner background--primary">
       {socialMediaItems.map((item, i) => {
         return (
-          <li className="banner__item" key={`banner__item-${i}`}>
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="banner__link primary"
-            >
-              {item.icon}
-            </a>
-          </li>
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="banner__item primary"
+            key={`banner__item-${i}`}
+          >
+            {item.icon}
+          </a>
         );
       })}
-    </ul>
+    </div>
   );
 };
 

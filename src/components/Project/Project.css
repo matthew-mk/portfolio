@@ -14,15 +14,18 @@
   padding: 0 3rem;
 }
 
+.project__text {
+  flex: 2;
+}
+
 .project__img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
+  flex: 1;
 }
 
 .project__img > img {
-  aspect-ratio: 14 / 9;
   object-fit: cover;
   -o-object-fit: cover;
 }

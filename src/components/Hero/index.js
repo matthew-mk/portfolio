@@ -13,8 +13,7 @@ const Hero = () => {
         I'm Matthew.
       </h1>
       <p className="hero__text">
-        I'm a{" "}
-        <span className="hero__text--semibold">frontend software engineer</span>
+        I'm a <span className="hero__text--semibold">software engineer</span>
       </p>
       <LinkS
         to="about"

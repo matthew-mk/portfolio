@@ -23,6 +23,10 @@
   transition: 0.2s;
 }
 
+.banner__icon {
+  font-size: 1.75rem;
+}
+
 @media screen and (max-width: 500px) {
   .banner {
     flex-direction: column;

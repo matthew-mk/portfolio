@@ -5,20 +5,19 @@ import { Link as LinkS } from "react-scroll";
 import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Navbar = ({ toggleSidebar }) => {
-  const iconSize = "1.5rem";
   const socialMediaItems = [
     {
-      icon: <FaEnvelope size={iconSize} />,
+      icon: <FaEnvelope className="nav__icon" />,
       href: "mailto:matthew.m.king@outlook.com",
       newTab: false,
     },
     {
-      icon: <FaGithub size={iconSize} />,
+      icon: <FaGithub className="nav__icon" />,
       href: "https://github.com/matthew-mk",
       newTab: true,
     },
     {
-      icon: <FaLinkedinIn size={iconSize} />,
+      icon: <FaLinkedinIn className="nav__icon" />,
       href: "https://linkedin.com/in/matthew-m-king",
       newTab: true,
     },

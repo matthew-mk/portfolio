@@ -3,20 +3,19 @@ import "./SocialMediaBanner.css";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialMediaBanner = () => {
-  const iconSize = "1.75rem";
   const socialMediaItems = [
     {
-      icon: <FaEnvelope size={iconSize} />,
+      icon: <FaEnvelope className="banner__icon" />,
       href: "mailto:matthew.m.king@outlook.com",
       newTab: false,
     },
     {
-      icon: <FaGithub size={iconSize} />,
+      icon: <FaGithub className="banner__icon" />,
       href: "https://github.com/matthew-mk",
       newTab: true,
     },
     {
-      icon: <FaLinkedin size={iconSize} />,
+      icon: <FaLinkedin className="banner__icon" />,
       href: "https://linkedin.com/in/matthew-m-king",
       newTab: true,
     },

@@ -1,7 +1,7 @@
 import React from "react";
-import "./Sidebar.css";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
+import "./Sidebar.css";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (

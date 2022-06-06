@@ -1,7 +1,7 @@
 import React from "react";
-import "./Footer.css";
 import { Link as LinkS } from "react-scroll";
 import logo from "../../assets/images/logo.svg";
+import "./Footer.css";
 
 const Footer = () => {
   const links = [

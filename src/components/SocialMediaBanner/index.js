@@ -1,6 +1,6 @@
 import React from "react";
-import "./SocialMediaBanner.css";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import "./SocialMediaBanner.css";
 
 const SocialMediaBanner = () => {
   const socialMediaItems = [

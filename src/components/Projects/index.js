@@ -1,8 +1,8 @@
 import React from "react";
-import Project from "../Project";
-import surfImage from "../../assets/images/projects/surf.png";
-import dataImage from "../../assets/images/projects/data.png";
 import covInfoImage from "../../assets/images/projects/covid.png";
+import dataImage from "../../assets/images/projects/data.png";
+import surfImage from "../../assets/images/projects/surf.png";
+import Project from "../Project";
 
 const Projects = () => {
   const projects = [

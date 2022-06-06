@@ -1,8 +1,8 @@
 import React from "react";
-import "./Navbar.css";
-import logo from "../../assets/images/logo.svg";
-import { Link as LinkS } from "react-scroll";
 import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { Link as LinkS } from "react-scroll";
+import logo from "../../assets/images/logo.svg";
+import "./Navbar.css";
 
 const Navbar = ({ toggleSidebar }) => {
   const socialMediaItems = [

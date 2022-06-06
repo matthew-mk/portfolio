@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import "./About.css";
-import graduationImage from "../../assets/images/graduation.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import React, { useEffect } from "react";
+import graduationImage from "../../assets/images/graduation.jpg";
+import "./About.css";
 
 const About = () => {
   useEffect(() => {

@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-import "./Skills.css";
-import Technology from "../Technology";
-import html from "../../assets/images/technologies/html.png";
-import css from "../../assets/images/technologies/css.png";
-import javascript from "../../assets/images/technologies/javascript.png";
-import react from "../../assets/images/technologies/react.png";
-import node from "../../assets/images/technologies/node.png";
-import sql from "../../assets/images/technologies/sql.png";
-import python from "../../assets/images/technologies/python.png";
-import java from "../../assets/images/technologies/java.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import React, { useEffect } from "react";
+import css from "../../assets/images/technologies/css.png";
+import html from "../../assets/images/technologies/html.png";
+import java from "../../assets/images/technologies/java.png";
+import javascript from "../../assets/images/technologies/javascript.png";
+import node from "../../assets/images/technologies/node.png";
+import python from "../../assets/images/technologies/python.png";
+import react from "../../assets/images/technologies/react.png";
+import sql from "../../assets/images/technologies/sql.png";
+import Technology from "../Technology";
+import "./Skills.css";
 
 const Skills = () => {
   const technologies = [

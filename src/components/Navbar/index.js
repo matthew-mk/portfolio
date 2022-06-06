@@ -7,14 +7,20 @@ import { FaBars, FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Navbar = ({ toggleSidebar }) => {
   const iconSize = "1.5rem";
   const socialMediaItems = [
-    { icon: <FaEnvelope size={iconSize} />, href: "#" },
+    {
+      icon: <FaEnvelope size={iconSize} />,
+      href: "mailto:matthew.m.king@outlook.com",
+      newTab: false,
+    },
     {
       icon: <FaGithub size={iconSize} />,
       href: "https://github.com/matthew-mk",
+      newTab: true,
     },
     {
       icon: <FaLinkedinIn size={iconSize} />,
       href: "https://linkedin.com/in/matthew-m-king",
+      newTab: true,
     },
   ];
 
@@ -72,8 +78,8 @@ const Navbar = ({ toggleSidebar }) => {
                 <li className="nav__item" key={`nav__item-${i}`}>
                   <a
                     href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={item.newTab && "_blank"}
+                    rel={item.newTab && "noopener noreferrer"}
                     className="nav__link"
                   >
                     {item.icon}

@@ -5,9 +5,13 @@ import logo from "../../assets/images/logo.svg";
 
 const Footer = () => {
   const links = [
-    { name: "Email", href: "#" },
-    { name: "GitHub", href: "https://github.com/matthew-mk" },
-    { name: "LinkedIn", href: "https://linkedin.com/in/matthew-m-king" },
+    { name: "Email", href: "mailto:matthew.m.king@outlook.com", newTab: false },
+    { name: "GitHub", href: "https://github.com/matthew-mk", newTab: true },
+    {
+      name: "LinkedIn",
+      href: "https://linkedin.com/in/matthew-m-king",
+      newTab: true,
+    },
     // { name: "CV", href: "#" },
   ];
 
@@ -28,8 +32,8 @@ const Footer = () => {
           return (
             <a
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={link.newTab && "_blank"}
+              rel={link.newTab && "noopener noreferrer"}
               className="footer__link"
               key={`footer__link-${i}`}
             >

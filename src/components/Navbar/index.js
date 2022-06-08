@@ -77,8 +77,8 @@ const Navbar = ({ toggleSidebar }) => {
                 <li className="nav__item" key={`nav__item-${i}`}>
                   <a
                     href={item.href}
-                    target={item.newTab && "_blank"}
-                    rel={item.newTab && "noopener noreferrer"}
+                    target={item.newTab ? "_blank" : undefined}
+                    rel={item.newTab ? "noopener noreferrer" : undefined}
                     className="nav__link"
                   >
                     {item.icon}

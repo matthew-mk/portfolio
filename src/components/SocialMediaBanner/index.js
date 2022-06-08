@@ -27,8 +27,8 @@ const SocialMediaBanner = () => {
         return (
           <a
             href={item.href}
-            target={item.newTab && "_blank"}
-            rel={item.newTab && "noopener noreferrer"}
+            target={item.newTab ? "_blank" : undefined}
+            rel={item.newTab ? "noopener noreferrer" : undefined}
             className="banner__item primary"
             key={`banner__item-${i}`}
           >

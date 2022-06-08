@@ -32,8 +32,8 @@ const Footer = () => {
           return (
             <a
               href={link.href}
-              target={link.newTab && "_blank"}
-              rel={link.newTab && "noopener noreferrer"}
+              target={link.newTab ? "_blank" : undefined}
+              rel={link.newTab ? "noopener noreferrer" : undefined}
               className="footer__link"
               key={`footer__link-${i}`}
             >

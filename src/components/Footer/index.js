@@ -29,11 +29,19 @@ const Footer = () => {
       </LinkS>
       <div className="footer__links">
         {links.map((link, i) => {
-          return (
+          return link.newTab ? (
             <a
               href={link.href}
-              target={link.newTab ? "_blank" : undefined}
-              rel={link.newTab ? "noopener noreferrer" : undefined}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link"
+              key={`footer__link-${i}`}
+            >
+              {link.name}
+            </a>
+          ) : (
+            <a
+              href={link.href}
               className="footer__link"
               key={`footer__link-${i}`}
             >

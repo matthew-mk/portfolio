@@ -75,14 +75,20 @@ const Navbar = ({ toggleSidebar }) => {
             {socialMediaItems.map((item, i) => {
               return (
                 <li className="nav__item" key={`nav__item-${i}`}>
-                  <a
-                    href={item.href}
-                    target={item.newTab ? "_blank" : undefined}
-                    rel={item.newTab ? "noopener noreferrer" : undefined}
-                    className="nav__link"
-                  >
-                    {item.icon}
-                  </a>
+                  {item.newTab ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="nav__link"
+                    >
+                      {item.icon}
+                    </a>
+                  ) : (
+                    <a href={item.href} className="nav__link">
+                      {item.icon}
+                    </a>
+                  )}
                 </li>
               );
             })}

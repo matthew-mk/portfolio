@@ -24,11 +24,19 @@ const SocialMediaBanner = () => {
   return (
     <div className="banner background--primary">
       {socialMediaItems.map((item, i) => {
-        return (
+        return item.newTab ? (
           <a
             href={item.href}
-            target={item.newTab ? "_blank" : undefined}
-            rel={item.newTab ? "noopener noreferrer" : undefined}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="banner__item primary"
+            key={`banner__item-${i}`}
+          >
+            {item.icon}
+          </a>
+        ) : (
+          <a
+            href={item.href}
             className="banner__item primary"
             key={`banner__item-${i}`}
           >
